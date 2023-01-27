@@ -6,7 +6,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>My Coffee Shop</title>
+   <title>My Coffee Shop | Saurabh Dixit </title>
 
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -219,16 +219,15 @@
 
          <form action="" method="post">
             <h3>Book a Table</h3>
-            <input type="text" name="name" required class="box" maxlength="20" placeholder="enter your name">
-            <input type="email" id="email" name="Email" required class="box" maxlength="20" placeholder="Enter Your Email">
+            <input type="text" name="name" required class="box" maxlength="30" placeholder="enter your name">
+            <input type="email" id="email" name="Email" required class="box" maxlength="100" placeholder="Enter Your Email">
             <input type="number" name="number" required class="box" maxlength="20" placeholder="enter your number"
                min="0" max="9999999999" onkeypress="if(this.value.length == 10) return false">
             <input type="number" name="guests" required class="box" maxlength="20" placeholder="how many guests" min="0"
                max="99" onkeypress="if(this.value.length == 2) return false">
-            <input style="resize: none;" type="text" name="message" required class="box" maxlength="20" placeholder="Type Your message">
+            <textarea name="message" id="message" cols="10" rows="5" class="box"  style="width: 100%; font-size: medium; height: 100%;resize:none;" placeholder="Type Your message"></textarea>
             <input type="submit" name="send" value="send message" class="btn">
          </form>
-
       </div>
 
    </section>
