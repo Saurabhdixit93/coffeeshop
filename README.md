@@ -19,13 +19,7 @@
 
 ## ⭐ Introduction
 
-Meals App displays meals from different categories and let's the users search the meals as per their interest and even let's them add a particular meal to their favourites.
-
-* Displaying different categories of meals. Clicking on any of the categories displays the meals belonging to that category.
-
-
-* User can add any meal as favorite. All the user's favorites are displayed in the "Favorites" fragment.
-*User can remove any meal from favorites. The user preferences will be updated and won't be displayed in "Favorites" fragment.
+This is a website template for a coffee shop. The website includes a header section with a logo and navigation menu, a home section with a welcome message and call-to-action button, an about section with information about the coffee shop and its philosophy, a services section with a slider displaying different offerings, and a menu section showcasing the coffee shop's menu. The website also uses Font Awesome for icons and has a custom stylesheet and an image folder. The website is built with HTML and CSS.
 
 
 
