@@ -331,6 +331,7 @@ h4 {
 }
 
 .contact .row form .box {
+   text-transform: none !important;
    width: 100%;
    padding: 1.4rem;
    font-size: 1.8rem;
