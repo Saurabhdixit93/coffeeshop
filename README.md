@@ -19,7 +19,7 @@
 
 ## ⭐ Introduction
 
-This is a website template for a coffee shop. The website includes a header section with a logo and navigation menu, a home section with a welcome message and call-to-action button, an about section with information about the coffee shop and its philosophy, a services section with a slider displaying different offerings, and a menu section showcasing the coffee shop's menu. The website also uses Font Awesome for icons and has a custom stylesheet and an image folder. The website is built with HTML and CSS.
+This is a website template for a coffee shop. The website includes a header section with a logo and navigation menu, a home section with a welcome message and call-to-action button, an about section with information about the coffee shop and its philosophy, a services section with a slider displaying different offerings, and a menu section showcasing the coffee shop's menu. The website also uses Font Awesome for icons and has a custom stylesheet and an image folder. The website is built with HTML CSS And Javascript.
 
 
 
