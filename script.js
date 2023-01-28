@@ -56,3 +56,10 @@ var swiper = new Swiper('.swiper-container', {
       prevEl: '.swiper-button-prev',
    }
 });
+
+
+// For Scrolling View Page
+window.addEventListener("scroll", function(){
+   var scrollPercent = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight) * 100;
+   document.getElementById("scroll-bar").style.width = scrollPercent + "%";
+ });
