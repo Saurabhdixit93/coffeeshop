@@ -1,4 +1,20 @@
 
+// Add an event listener to the form to listen for the submit event
+
+var form = document.getElementById("myform");
+form.addEventListener("submit", function(event) {
+  var message = document.getElementById("message").value;
+
+
+  // Check if the message field is empty
+  if (message === "") {
+      alert("Please enter a message");
+      event.preventDefault();
+   }
+});
+
+// Adding More Features In Web
+
 let menu = document.querySelector('#menu-btn');
 let navbar = document.querySelector('.header .flex .navbar');
 var email = document.getElementById("email").value
