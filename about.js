@@ -1,14 +1,5 @@
 // JavaScript
-
-// Get the preloader element
-// document.addEventListener("DOMContentLoaded", function() {
-//     var preloader = document.getElementById("preloader");
-//     preloader.style.display = "none";
-//   });
-//   document.addEventListener("DOMContentLoaded", function() {
-//     var preloader = document.getElementById("preloader");
-//     preloader.classList.add("hide");
-//   });
+// For Preloader
   document.addEventListener("DOMContentLoaded", function() {
     var preloader = document.getElementById("preloader");
     preloader.style.display = "flex";
