@@ -1,4 +1,3 @@
-
 :root {
   --main-color: #be9c79;
   --black: #333;
@@ -35,7 +34,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: #fff;
+    background: #e7d7d7;
     z-index: 99999;
     display: flex;
     align-items: center;
@@ -195,5 +194,56 @@
   border-radius: 70%;
   transform: translateX(-50%);
 }
-
+@media screen and (max-width:600px){
+  .preloader-icon {
+    width: 100px;
+    height: 100px;
+    margin-left: -26%;
+  }
+  .icon-text{
+    top: 20%;
+    margin-left: 20%;
+  }
   
+  .icon-inner {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+  }
+  
+  .icon-line {
+    width: 100%;
+    height: 6px;
+   
+  }
+
+}
+
+@media screen and (max-width:320px) {
+  #preloader{
+    background-color: var(--main-color);
+  }
+  .preloader-icon {
+    width: 100px;
+    height: 100px;
+    margin-left: -38%;
+  }
+  .icon-text{
+    top: 20%;
+    margin-left: 20%;
+    background-color: transparent;
+  }
+  
+  .icon-inner {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+  }
+  
+  .icon-line {
+    width: 100%;
+    height: 6px;
+   
+  }
+
+}
