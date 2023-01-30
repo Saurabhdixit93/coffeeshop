@@ -64,10 +64,10 @@
     height: 6px;
     margin-bottom: 8px;
     border-radius: 4px;
-    animation: loading 10s ease-in-out infinite;
     position: absolute;
-  }
-  
+    animation: pulse-line 1s ease-in-out infinite;
+
+  }  
   .icon-line:nth-child(1) {
     background-color: #3498db;
     top: 0;
@@ -121,6 +121,29 @@
   }
   #preloader .icon-text {
     animation: blink 1s infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse-line {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 @keyframes blink {
