@@ -6,19 +6,24 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>My Coffee Shop | Saurabh Dixit </title>
+
+   <!-- WebSite Title -->
+   <title>My Coffee Shop</title>
 
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
    <!-- custom css file link  -->
    <link rel="stylesheet" href="style.css">
+
+   <!-- custom css -->
+   <link rel="stylesheet" href="custom.css">
    
    <!-- Link Fevicon -->
    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 
-     <!-- More icons -->
-     <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+   <!-- More icons -->
+   <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
 
 
 </head>
@@ -28,22 +33,45 @@
    <!-- header section starts  -->
 
    <header class="header">
-      
-       <!-- View Percantage -->
-      <div id="scroll-container">
-         <div id="scroll-bar"></div>
+
+      <!-- Pre_Loader For Web -->
+
+       <div id="preloader">
+         <div class="preloader-icon">
+           <div class="icon-inner">
+             <div class="icon-line"></div>
+             <div class="icon-line"></div>
+             <div class="icon-line"></div>
+             <div class="icon-line"></div>
+             <div class="icon-line"></div>
+           </div>
+           <div class="icon-text">Loading...</div>
+         </div>
        </div>
+
+      <!-- View Percantage -->
 
       <section class="flex">
 
-         <a href="#home" class="logo"><img src="images/logo.png" alt=""></a>
+         <!-- View Percantage -->
 
+         <div id="scroll-container">
+            <div id="scroll-bar"></div>
+            <div class="pointer"></div>
+          </div>
+
+<!-- Brand Logo  -->
+         <a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+
+<!-- Menu -->
+          
          <nav class="navbar">
             <a href="#home">home</a>
             <a href="#about">about</a>
             <a href="#Services">Services</a>
             <a href="#menu">menu</a>
             <a href="#contact">contact</a>
+            <a href="about.html" >about me</a>
          </nav>
 
          <div id="menu-btn" class="fas fa-bars"></div>
@@ -222,9 +250,9 @@
             <img src="images/contact-img.svg" alt="">
          </div>
 
-        <form action="" method="post" id="myform">
+         <form action="" method="post" id="myform">
             <h3>Book a Table</h3>
-            <input type="text" name="name" required class="box" maxlength="30" placeholder="Enter Your Name">
+            <input type="text" id="name" name="name" required class="box" maxlength="30" placeholder="Enter Your Name">
             <input type="email" id="email" name="Email" required class="box" maxlength="100" placeholder="Enter Your Email">
             <input type="number" name="number" required class="box" maxlength="20" placeholder="Enter Your Number"
                min="0" max="9999999999" onkeypress="if(this.value.length == 10) return false">
@@ -266,8 +294,8 @@
          <div class="box">
             <i class="fas fa-phone"></i>
             <h3>Our Contact</h3>
-            <p>+254-567-8965</p>
-            <p>+961-210-9984</p>
+            <p>+123-456-7890</p>
+            <p>+111-222-3333</p>
          </div>
       </div>
         <!-- Devloper Contact Details -->
