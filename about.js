@@ -1,28 +1,49 @@
 // JavaScript
 // For Preloader
-  document.addEventListener("DOMContentLoaded", function() {
-    var preloader = document.getElementById("preloader");
-    preloader.style.display = "flex";
-    setTimeout(function() {
-      preloader.style.display = "none";
-    }, 1000);
+//   document.addEventListener("DOMContentLoaded", function() {
+//     var preloader = document.getElementById("preloader");
+//     preloader.style.display = "flex";
+//     setTimeout(function() {
+//       preloader.style.display = "none";
+//     }, 1000);
+//   });
+
+//   document.addEventListener("DOMContentLoaded", function() {
+//     var preloader = document.getElementById("preloader");
+//     preloader.classList.add("show");
+//     setTimeout(function() {
+//       preloader.classList.remove("show");
+//       preloader.classList.add("hide");
+//     }, 1000);
+//   });
+
+//   document.addEventListener("DOMContentLoaded", function() {
+//     var preloaderText = document.querySelector("#preloader .icon-text");
+//     setInterval(function() {
+//       preloaderText.classList.toggle("blink");
+//     }, 1000);
+//   });
+
+ // PreLoader For web
+  window.addEventListener("load", function() {
+      setTimeout(function (){
+        const preloader = document.querySelector(".preloader");
+        preloader.style.display = "none";
+      },2000);// 2000ms = 2 seconds
+  });
+  
+  window.addEventListener("load", function() {
+      setTimeout(function (){
+        document.getElementById("spinner").style.display = "none";
+      },2000);// 2000ms = 2 seconds
   });
 
-  document.addEventListener("DOMContentLoaded", function() {
-    var preloader = document.getElementById("preloader");
-    preloader.classList.add("show");
-    setTimeout(function() {
-      preloader.classList.remove("show");
-      preloader.classList.add("hide");
-    }, 1000);
+  window.addEventListener("beforeunload", function() {
+      setTimeout(function (){
+          document.getElementById("spinner").style.display = "block";
+      },2000); // 2000ms = 2 seconds
   });
 
-  document.addEventListener("DOMContentLoaded", function() {
-    var preloaderText = document.querySelector("#preloader .icon-text");
-    setInterval(function() {
-      preloaderText.classList.toggle("blink");
-    }, 1000);
-  });
   
 //   Show More Feature
 
