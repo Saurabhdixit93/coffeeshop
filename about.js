@@ -1,28 +1,4 @@
 // JavaScript
-// For Preloader
-//   document.addEventListener("DOMContentLoaded", function() {
-//     var preloader = document.getElementById("preloader");
-//     preloader.style.display = "flex";
-//     setTimeout(function() {
-//       preloader.style.display = "none";
-//     }, 1000);
-//   });
-
-//   document.addEventListener("DOMContentLoaded", function() {
-//     var preloader = document.getElementById("preloader");
-//     preloader.classList.add("show");
-//     setTimeout(function() {
-//       preloader.classList.remove("show");
-//       preloader.classList.add("hide");
-//     }, 1000);
-//   });
-
-//   document.addEventListener("DOMContentLoaded", function() {
-//     var preloaderText = document.querySelector("#preloader .icon-text");
-//     setInterval(function() {
-//       preloaderText.classList.toggle("blink");
-//     }, 1000);
-//   });
 
  // PreLoader For web
   window.addEventListener("load", function() {
@@ -59,3 +35,20 @@ showMoreBtn.addEventListener('click', function() {
     this.innerHTML = 'Show More';
   }
 });
+
+
+// Adding More Features In Web
+
+let menu = document.querySelector('#menu-btn');
+let navbar = document.querySelector('.header .flex .navbar');
+
+
+menu.onclick = () => {
+   menu.classList.toggle('fa-times');
+   navbar.classList.toggle('active');
+}
+
+window.onscroll = () => {
+   menu.classList.remove('fa-times');
+   navbar.classList.remove('active');
+}
