@@ -63,7 +63,7 @@ body {
   /* make the profile picture responsive */
   .about-me-image-container img {
     width: 100%;
-    margin-top: 35px;
+    margin-top: 70px;
     max-width: 200px; /* set a maximum width */
     border-radius: 30%; /* add a border radius for a circular shape */
   }
