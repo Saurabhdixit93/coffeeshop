@@ -74,6 +74,7 @@ body {
     font-size: 10px;
     width: 100%;
     height: 50%;
+    margin-top: 10px;
   }
   
   /* make the layout responsive for smaller screens */
@@ -132,5 +133,8 @@ body {
     }
     .about-me-image-container img {
       margin-top: 35px;
+      margin-bottom: -15px;
+      margin-left: 10px;
+}
     }
  }
