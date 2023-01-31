@@ -125,8 +125,12 @@ body {
   /* Media Query */
 
   @media screen and (max-width: 520px) {
-    .smart {
+   .smart {
        font-size: 25px !important;
        line-height: 24px !important;
+       margin-top:24px;
+    }
+    .about-me-image-container img {
+      margin-top: 35px;
     }
  }
