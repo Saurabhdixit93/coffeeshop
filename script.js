@@ -1,15 +1,26 @@
 
 // Get the preloader element
 // For Main page
-$(document).ready(function() {
-  // Show preloader
-  $("#preloader").fadeIn();
-
-  // Hide preloader after all assets are loaded
-  $(window).on("load", function() {
-    $("#preloader").fadeOut();
+ // PreLoader For web
+  window.addEventListener("load", function() {
+      setTimeout(function (){
+        const preloader = document.querySelector(".preloader");
+        preloader.style.display = "none";
+      },2000);// 2000ms = 2 seconds
   });
-});
+  
+  window.addEventListener("load", function() {
+      setTimeout(function (){
+        document.getElementById("spinner").style.display = "none";
+      },2000);// 2000ms = 2 seconds
+  });
+
+  window.addEventListener("beforeunload", function() {
+      setTimeout(function (){
+          document.getElementById("spinner").style.display = "block";
+      },2000); // 2000ms = 2 seconds
+  });
+
 
 
  
